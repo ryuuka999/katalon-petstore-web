@@ -113,4 +113,4 @@ Tiap kali Test Suite dijalankan, report-nya otomatis tersimpan di `Reports/<time
 - [Katalon Studio Docs](https://docs.katalon.com/)
 - [JPetStore Demo](https://petstore.octoperf.com/)
 
-Udh gitu aja, makasih yg udh mampir awokawokawok 🙏
+Thank you~
