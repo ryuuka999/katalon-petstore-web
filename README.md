@@ -44,7 +44,7 @@ katalon-petstore-web/
 | TC02 | Login_Negative | Negative, DDT (5x) | `data_login_negative.csv` | Muncul pesan *"Invalid username or password. Signon failed."* (kalau field kosong, form login tetep muncul), user tidak bisa login |
 | TC03 | Search_Product_Positive | Positive, DDT (5x) | `data_search_keyword.csv` | Tabel hasil search ada produk yg dicari |
 | TC04 | Search_Product_Negative | Negative | Variable test case | Tabel hasil search kosong melompong |
-| TC05 | Add_To_Cart_Positive | Positive, E2E | Global Variable | Login > kategori Fish > pilih produk > Add to Cart > item msk ke Shopping Cart |
+| TC05 | Add_To_Cart_Positive | Positive, E2E | Global Variable | Login > kategori Fish > pilih produk > Add to Cart > item masuk ke Shopping Cart |
 
 Total sekali jalan Test Suite ada **13 test run** (1 + 5 + 5 + 1 + 1). 
 ### Data DDT
