@@ -1,6 +1,6 @@
 # Katalon PetStore Web - Automation Testing
 
-Ini Final Project Web Automation pake **Katalon Studio** buat ngetes web demo e-commerce [JPetStore](https://petstore.octoperf.com/actions/Catalog.action). Awokawokawok akhirnya kelar jg 🐾
+Ini Final Project Web Automation pake **Katalon Studio** buat ngetes web demo e-commerce [JPetStore](https://petstore.octoperf.com/actions/Catalog.action) 🐾
 
 Yg dipake di project ini:
 
@@ -46,8 +46,7 @@ katalon-petstore-web/
 | TC04 | Search_Product_Negative | Negative | Variable test case | Tabel hasil search kosong melompong |
 | TC05 | Add_To_Cart_Positive | Positive, E2E | Global Variable | Login > kategori Fish > pilih produk > Add to Cart > item msk ke Shopping Cart |
 
-Total sekali jalan Test Suite ada **13 test run** (1 + 5 + 5 + 1 + 1). Lumayan lah awokawokawok
-
+Total sekali jalan Test Suite ada **13 test run** (1 + 5 + 5 + 1 + 1). 
 ### Data DDT
 
 `data_login_negative.csv`
