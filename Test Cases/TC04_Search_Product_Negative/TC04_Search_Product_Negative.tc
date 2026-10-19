@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC04 - Verifikasi pencarian tidak menampilkan produk untuk keyword yang tidak ada di katalog.</description>
+   <name>TC04_Search_Product_Negative</name>
+   <tag>negative,search</tag>
+   <comment>Expected: Tabel hasil pencarian kosong (tidak ada baris produk).</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ddb82622-41b1-4b7c-82ef-6eed35b40bfd</testCaseGuid>
+   <variable>
+      <defaultValue>'xyz123random!@#'</defaultValue>
+      <description>Keyword yang tidak ada di katalog</description>
+      <id>de7d142b-5d3f-4051-a81b-64f4322da9eb</id>
+      <masked>false</masked>
+      <name>invalid_keyword</name>
+   </variable>
+</TestCaseEntity>

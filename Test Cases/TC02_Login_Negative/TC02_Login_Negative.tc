@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC02 - Verifikasi login GAGAL menggunakan kombinasi username/password tidak valid. Data-Driven Testing dari Data Files/data_login_negative.</description>
+   <name>TC02_Login_Negative</name>
+   <tag>negative,login,ddt</tag>
+   <comment>Expected: Pesan error tampil (atau form login tetap tampil untuk field kosong) dan user tidak login.</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7058849c-f5e6-4c94-830b-f46513edafcf</testCaseGuid>
+   <variable>
+      <defaultValue>'wrong_user'</defaultValue>
+      <description>Username dari data file</description>
+      <id>84c456d8-fc3a-4b8f-aad6-df8106109980</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'wrong_pass'</defaultValue>
+      <description>Password dari data file</description>
+      <id>13351969-8e27-4e24-b5da-ff78a22c2035</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Invalid username or password. Signon failed.'</defaultValue>
+      <description>Pesan error yang diharapkan (kosong = tidak ada pesan, form login tetap tampil)</description>
+      <id>f0af1b86-95f1-4095-b0ef-602ee6795410</id>
+      <masked>false</masked>
+      <name>expected_message</name>
+   </variable>
+</TestCaseEntity>

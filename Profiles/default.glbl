@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <variables>
+      <GlobalVariableEntity>
+         <description>Base URL dari JPetStore</description>
+         <initValue>'https://petstore.octoperf.com/actions/Catalog.action'</initValue>
+         <name>BASE_URL</name>
+      </GlobalVariableEntity>
+      <GlobalVariableEntity>
+         <description>Username valid untuk login</description>
+         <initValue>'j2ee'</initValue>
+         <name>VALID_USERNAME</name>
+      </GlobalVariableEntity>
+      <GlobalVariableEntity>
+         <description>Password valid untuk login</description>
+         <initValue>'j2ee'</initValue>
+         <name>VALID_PASSWORD</name>
+      </GlobalVariableEntity>
+      <GlobalVariableEntity>
+         <description>Timeout dalam detik</description>
+         <initValue>10</initValue>
+         <name>TIMEOUT</name>
+      </GlobalVariableEntity>
+      <GlobalVariableEntity>
+         <description>URL halaman Login</description>
+         <initValue>'https://petstore.octoperf.com/actions/Account.action?signonForm='</initValue>
+         <name>LOGIN_URL</name>
+      </GlobalVariableEntity>
+   </variables>
+</GlobalVariableEntities>

@@ -1,0 +1,6 @@
+username,password,expected_message
+wrong_user,wrong_pass,Invalid username or password. Signon failed.
+j2ee,wrongpass,Invalid username or password. Signon failed.
+wronguser,j2ee,Invalid username or password. Signon failed.
+,j2ee,
+j2ee,,

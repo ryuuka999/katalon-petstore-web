@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC01 - Verifikasi login berhasil dengan username dan password valid dari Global Variable. Memastikan link Sign Out muncul sebagai indikator login sukses.</description>
+   <name>TC01_Login_Positive</name>
+   <tag>positive,login,smoke</tag>
+   <comment>Precondition: Aplikasi JPetStore dapat diakses. Expected: User berhasil login, Sign Out tampil.</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aa0f08d9-fec8-4142-b5ab-ff7d1092427b</testCaseGuid>
+</TestCaseEntity>

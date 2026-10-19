@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>Regression Test Suite JPetStore - Login Positive, Login Negative (DDT), Search Positive (DDT), Search Negative, Add to Cart</description>
+   <name>TS_Regression_PetStore</name>
+   <tag>regression</tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>a1b2c3d4-e5f6-7890-abcd-ef1234567890</testSuiteGuid>
+   <testCaseLink>
+      <guid>11111111-1111-1111-1111-111111111111</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC01_Login_Positive/TC01_Login_Positive</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>22222222-2222-2222-2222-222222222222</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC02_Login_Negative/TC02_Login_Negative</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>45fa81f1-5928-4c98-8b0f-2f88720b0b82</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/data_login_negative</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>45fa81f1-5928-4c98-8b0f-2f88720b0b82</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>username</value>
+         <variableId>84c456d8-fc3a-4b8f-aad6-df8106109980</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>45fa81f1-5928-4c98-8b0f-2f88720b0b82</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>password</value>
+         <variableId>13351969-8e27-4e24-b5da-ff78a22c2035</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>45fa81f1-5928-4c98-8b0f-2f88720b0b82</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expected_message</value>
+         <variableId>f0af1b86-95f1-4095-b0ef-602ee6795410</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>33333333-3333-3333-3333-333333333333</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC03_Search_Product_Positive/TC03_Search_Product_Positive</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>cb9b66a1-8bbb-493d-90db-c195fd79760a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/data_search_keyword</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>cb9b66a1-8bbb-493d-90db-c195fd79760a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>keyword</value>
+         <variableId>b7834d43-0870-4477-9152-08d887ec85c7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>cb9b66a1-8bbb-493d-90db-c195fd79760a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expected_result</value>
+         <variableId>5a945eb1-0900-44f2-9c5a-1954f3aa9b66</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>44444444-4444-4444-4444-444444444444</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC04_Search_Product_Negative/TC04_Search_Product_Negative</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>de7d142b-5d3f-4051-a81b-64f4322da9eb</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>55555555-5555-5555-5555-555555555555</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC05_Add_To_Cart_Positive/TC05_Add_To_Cart_Positive</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+</TestSuiteEntity>

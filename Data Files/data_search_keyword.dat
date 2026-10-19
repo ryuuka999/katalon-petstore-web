@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>data_search_keyword</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator>,</csvSeperator>
+   <dataFileGUID>3e7c1a52-8d4f-4b6e-9a21-7f0c5d2e8b14</dataFileGUID>
+   <dataSourceUrl>Data Files/data_search_keyword.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

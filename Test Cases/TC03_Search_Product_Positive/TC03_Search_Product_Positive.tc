@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC03 - Verifikasi pencarian produk menampilkan hasil untuk keyword valid. Data-Driven Testing dari Data Files/data_search_keyword.</description>
+   <name>TC03_Search_Product_Positive</name>
+   <tag>positive,search,ddt</tag>
+   <comment>Expected: Tabel hasil pencarian berisi produk sesuai expected_result.</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b7149051-ed14-445c-ad0a-339da02bfdc2</testCaseGuid>
+   <variable>
+      <defaultValue>'fish'</defaultValue>
+      <description>Kata kunci pencarian dari data file</description>
+      <id>b7834d43-0870-4477-9152-08d887ec85c7</id>
+      <masked>false</masked>
+      <name>keyword</name>
+   </variable>
+   <variable>
+      <defaultValue>'Angelfish'</defaultValue>
+      <description>Nama produk yang diharapkan muncul di tabel hasil</description>
+      <id>5a945eb1-0900-44f2-9c5a-1954f3aa9b66</id>
+      <masked>false</masked>
+      <name>expected_result</name>
+   </variable>
+</TestCaseEntity>

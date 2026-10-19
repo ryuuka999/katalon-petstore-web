@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC05 - Verifikasi user yang sudah login dapat menambahkan produk dari kategori Fish ke Shopping Cart.</description>
+   <name>TC05_Add_To_Cart_Positive</name>
+   <tag>positive,cart,e2e</tag>
+   <comment>Precondition: Akun valid tersedia. Expected: Shopping Cart berisi item yang dipilih.</comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5876f474-92a3-4312-b02a-ba45ccf27de8</testCaseGuid>
+</TestCaseEntity>
