@@ -2,21 +2,21 @@
 
 Ini Final Project Web Automation pake **Katalon Studio** buat ngetes web demo e-commerce [JPetStore](https://petstore.octoperf.com/actions/Catalog.action) 🐾
 
-Yg dipake di project ini:
+Yg dipakai di project ini:
 
-- **Hybrid Mode** - step test bs dibuka di tab *Manual* ato *Script*, logic tambahan (if/else, parameterized object, variable) ditulis pake Groovy
-- **Gk pake Record Web** - semua Test Object dibikin manual pake XPath, capek tp gpp awokawok
+- **Hybrid Mode** - step test dapat dibuka di tab *Manual* ato *Script*, logic tambahan (if/else, parameterized object, variable) ditulis pake Groovy
+- **Gk pake Record Web** - semua Test Object dibikin manual pakai XPath
 - **Positive & Negative test case**
-- **Data-Driven Testing (DDT)** - datanya dr CSV di `Data Files/`, trs di-binding ke variable test case lwt Test Suite
-- **Global Variable** - URL, username/password, sm timeout ditaro di Execution Profile `default`, jd gk hardcode di script
-- **Test Suite** - semua test case dijalanin lwt `TS_Regression_PetStore` & otomatis keluar execution report-nya
+- **Data-Driven Testing (DDT)** - datanya dr CSV di `Data Files/`, lalu di-binding ke variable test case lewat Test Suite
+- **Global Variable** - URL, username/password, dan timeout diletakkan di Execution Profile `default` (jadi gak hardcode di-script)
+- **Test Suite** - semua test case dijalanin lewat `TS_Regression_PetStore` & otomatis keluar execution report-nya
 
-## Yg Perlu Disiapin
+## Yang Perlu Disiapkan
 
 | Tool | Versi |
 |------|-------|
 | Katalon Studio | 9.x / 10.x |
-| Browser | Google Chrome (yg terbaru aja) |
+| Browser | Google Chrome (versi terbaru) |
 
 ## Struktur Project
 
@@ -41,7 +41,7 @@ katalon-petstore-web/
 | ID | Test Case | Tipe | Data | Expected Result |
 |----|-----------|------|------|-----------------|
 | TC01 | Login_Positive | Positive | Global Variable | Login sukses, link **Sign Out** muncul |
-| TC02 | Login_Negative | Negative, DDT (5x) | `data_login_negative.csv` | Muncul pesan *"Invalid username or password. Signon failed."* (kl field kosong ya form login tetep nongol), user gk bs login |
+| TC02 | Login_Negative | Negative, DDT (5x) | `data_login_negative.csv` | Muncul pesan *"Invalid username or password. Signon failed."* (kalau field kosong, form login tetep muncul), user tidak bisa login |
 | TC03 | Search_Product_Positive | Positive, DDT (5x) | `data_search_keyword.csv` | Tabel hasil search ada produk yg dicari |
 | TC04 | Search_Product_Negative | Negative | Variable test case | Tabel hasil search kosong melompong |
 | TC05 | Add_To_Cart_Positive | Positive, E2E | Global Variable | Login > kategori Fish > pilih produk > Add to Cart > item msk ke Shopping Cart |
@@ -81,14 +81,14 @@ Total sekali jalan Test Suite ada **13 test run** (1 + 5 + 5 + 1 + 1).
 
 ## Cara Jalaninnya
 
-### Lwt Katalon Studio (GUI)
+### Melalui Katalon Studio (GUI)
 
-1. Clone repo ini dl, trs di Katalon Studio pilih **File > Open Project** & buka folder `katalon-petstore-web`
+1. Clone repo ini dulu, lalu di Katalon Studio pilih **File > Open Project** & buka folder `katalon-petstore-web`
 2. Buka **Test Suites > TS_Regression_PetStore**
-3. Klik **Run** trs pilih **Chrome**
-4. Tunggu smp kelar, abis itu report-nya bs dicek di panel **Reports** ato di folder `Reports/<timestamp>/` (ada HTML, CSV, sm JUnit XML)
+3. Klik **Run** lalu pilih **Chrome**
+4. Tunggu hingga selesai, setelah itu report-nya dapat dicek di panel **Reports** atau di folder `Reports/<timestamp>/` (ada HTML, CSV, dan JUnit XML)
 
-### Lwt Console (Katalon Runtime Engine)
+### Lewat Console (Katalon Runtime Engine)
 
 ```bash
 katalonc -noSplash -runMode=console \
@@ -102,11 +102,11 @@ katalonc -noSplash -runMode=console \
 
 ## Execution Report
 
-Tiap kali Test Suite dijalanin, report-nya otomatis kesimpen di `Reports/<timestamp>/TS_Regression_PetStore/<timestamp>/`:
+Tiap kali Test Suite dijalankan, report-nya otomatis tersimpan di `Reports/<timestamp>/TS_Regression_PetStore/<timestamp>/`:
 
 - `<timestamp>.html` - report versi HTML
 - `<timestamp>.csv` - ringkasan per test case & step
-- `JUnit_Report.xml` - format JUnit, bs dipake buat CI
+- `JUnit_Report.xml` - format JUnit, dapat dipakai buat CI
 
 ## Referensi
 
